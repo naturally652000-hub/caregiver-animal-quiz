@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>你是哪種動物系照顧人格</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app" id="app">
+      <section class="hero screen is-active" data-screen="start">
+        <div class="hero-media" aria-hidden="true">
+          <img src="./assets/animal-caregiver-hero.png" alt="" />
+        </div>
+        <div class="hero-shell">
+          <div class="organizers" aria-label="活動單位">
+            <div class="organizer">
+              <img class="wide-logo" src="./assets/seniorlife-logo.jpg" alt="齡活長照 logo" />
+              <div>
+                <span>主辦單位</span>
+                <strong>齡活長照</strong>
+              </div>
+            </div>
+            <div class="organizer">
+              <img src="./assets/newtaipei-aging-care-logo.png" alt="新北市高齡照顧處 logo" />
+              <div>
+                <span>指導單位</span>
+                <strong>新北市高齡照顧處</strong>
+              </div>
+            </div>
+          </div>
+          <div class="hero-copy">
+            <p class="kicker">Cafe Care Quiz</p>
+            <h1>你是哪種動物系照顧人格</h1>
+            <p class="lead">在幾個日常情境裡，看見你照顧別人的習慣，也留一點位置給自己。</p>
+            <button class="primary" id="startBtn">開始測驗</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz screen" data-screen="quiz" aria-live="polite">
+        <div class="topbar">
+          <button class="icon-button" id="backBtn" aria-label="上一題">‹</button>
+          <div class="progress" aria-label="測驗進度">
+            <span id="progressBar"></span>
+          </div>
+          <span class="step" id="stepText">1 / 7</span>
+        </div>
+
+        <article class="question-panel">
+          <p class="kicker" id="questionScene">情境</p>
+          <h2 id="questionTitle"></h2>
+          <div class="choices" id="choices"></div>
+        </article>
+      </section>
+
+      <section class="result screen" data-screen="result">
+        <div class="result-layout">
+          <aside class="result-card">
+            <div class="animal-mark" id="resultIcon">🦉</div>
+            <p class="kicker">你的照顧人格</p>
+            <h2 id="resultTitle"></h2>
+            <p id="resultSubtitle"></p>
+          </aside>
+
+          <div class="result-body">
+            <p id="resultDescription"></p>
+            <div class="traits" id="traits"></div>
+
+            <div class="care-check">
+              <p class="kicker">下一題</p>
+              <h3>你有在照顧人嗎？</h3>
+              <p>如果你常常陪診、備餐、協助洗澡移位、處理藥物、情緒支持或生活安排，也許你已經是照顧者。</p>
+              <button class="secondary" id="stressBtn">測測照顧壓力</button>
+            </div>
+
+            <div class="actions">
+              <button class="ghost" id="restartBtn">再測一次</button>
+            </div>
+            <div class="share-box">
+              <p class="kicker">分享你的結果</p>
+              <div class="share-actions">
+                <a class="share-link facebook" id="facebookShare" href="#" target="_blank" rel="noreferrer">Facebook</a>
+                <a class="share-link line" id="lineShare" href="#" target="_blank" rel="noreferrer">LINE</a>
+                <a class="share-link threads" id="threadsShare" href="#" target="_blank" rel="noreferrer">Threads</a>
+                <button class="share-link copy" id="copyShare" type="button">複製文字</button>
+              </div>
+            </div>
+            <p class="share-note" id="shareNote" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="stress screen" data-screen="stress">
+        <div class="stress-shell">
+          <button class="icon-button home" id="resultBackBtn" aria-label="回結果">‹</button>
+          <p class="kicker">Care Load Check</p>
+          <h2>照顧壓力快速檢視</h2>
+          <p class="stress-intro">下列狀況若經常出現，可以把它當成一個訊號：你不必獨自撐完。</p>
+
+          <div class="checklist" id="stressList"></div>
+          <div class="stress-summary" id="stressSummary"></div>
+
+          <div class="resources">
+            <h3>可以先找這些資源</h3>
+            <a href="https://seniorlifeot.com/" target="_blank" rel="noreferrer">齡活長照官方網站</a>
+            <a href="https://1966.gov.tw/LTC/mp-201.html" target="_blank" rel="noreferrer">衛福部 1966 長照服務網</a>
+            <a href="https://1966.gov.tw/LTC/cp-6488-69915-201.html" target="_blank" rel="noreferrer">家庭照顧者支持服務</a>
+            <a href="./assets/high-burden-family-caregiver-screening-indicators.pdf" target="_blank">下載高負荷家庭照顧者初篩指標 PDF</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
