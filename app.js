@@ -52,15 +52,15 @@ const animals = {
 const questions = [
   {
     scene: "剛開始照顧",
-    title: "家人突然需要你協助生活，你第一個反應比較像是？",
+    title: "身邊的人突然身體不舒服(ex.頭痛），你第一個反應比較像是？",
     choices: [
-      { label: "先把病況、用藥、回診時間整理清楚。", note: "知道全貌後，你比較安心。", animal: "owl" },
+      { label: "馬上帶他去看醫師。", note: "馬上給專業的看，你比較放心。", animal: "owl" },
       { label: "先坐下來問他現在最不舒服的是什麼。", note: "情緒和感受是你的起點。", animal: "dolphin" }
     ]
   },
   {
     scene: "忙碌的一天",
-    title: "你同時要工作、買飯、陪診，最像你的做法是？",
+    title: "在照顧人的同時你要工作、買飯、陪診，最像你的做法是？",
     choices: [
       { label: "立刻出門處理最急的那件事。", note: "先動起來，路上再調整。", animal: "dog" },
       { label: "把任務分成今天、明天、可請人協助。", note: "你會把壓力切成小塊。", animal: "bee" }
@@ -71,7 +71,7 @@ const questions = [
     title: "被照顧的人拒絕你的關心跟幫忙，你會怎麼讓他卸下心防？",
     choices: [
       { label: "放慢速度，等情緒過去再陪他試一次。", note: "你相信耐心會打開一點空間。", animal: "elephant" },
-      { label: "先退一步，保留他的選擇感和尊嚴。", note: "你知道界線能降低拉扯。", animal: "cat" }
+      { label: "持續關心他，期待他說出來。", note: "你相信持續陪伴會讓對方慢慢開口。", animal: "cat" }
     ]
   },
   {
@@ -86,8 +86,8 @@ const questions = [
     scene: "情緒低潮",
     title: "對方說「我是不是拖累你了」，你最自然的回應是？",
     choices: [
-      { label: "靠近他，讓他知道這句話你聽見了。", note: "你會先接住心情。", animal: "dolphin" },
-      { label: "用穩定的日常行動讓他感覺被陪著。", note: "你不多說，但會一直在。", animal: "elephant" }
+      { label: "你沒有拖累我。你是我在乎的人，所以我願意陪你。你不用一個人扛，我們一起慢慢想辦法。", note: "你會先接住心情。", animal: "dolphin" },
+      { label: "如果你問我會不會累，我會誠實說會。但你不是我的負擔。我願意陪你，只是我們也要一起找到比較健康的方式。", note: "你用誠實和穩定陪對方往前。", animal: "elephant" }
     ]
   },
   {
@@ -95,15 +95,15 @@ const questions = [
     title: "你發現自己最近很容易煩躁，會比較想？",
     choices: [
       { label: "暫時躲到安靜的地方，先恢復自己的節奏。", note: "你需要一點不被打擾的空間。", animal: "cat" },
-      { label: "找可信任的人接手一下，讓事情不中斷。", note: "你會把照顧變成接力。", animal: "dog" }
+      { label: "找到自己有興趣的事情去舒壓。", note: "你會用行動幫自己重新充電。", animal: "dog" }
     ]
   },
   {
     scene: "長期照顧",
-    title: "如果照顧變成一段很長的路，你最想守住的是？",
+    title: "如果照顧是一段很長的日子，你最希望自己不要失去什麼？",
     choices: [
-      { label: "一套可持續的節奏，不要每天都像救火。", note: "你重視長期穩定。", animal: "elephant" },
-      { label: "讓被照顧的人仍然保有自己的生活感。", note: "你重視尊嚴和自主。", animal: "cat" }
+      { label: "穩定的生活節奏，讓每天不只是硬撐。", note: "你重視長期穩定。", animal: "elephant" },
+      { label: "彼此還能像原本的家人，而不只是照顧者和被照顧者。", note: "你重視關係裡的原本樣子。", animal: "cat" }
     ]
   }
 ];
