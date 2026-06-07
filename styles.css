@@ -108,7 +108,7 @@ p {
 h1 {
   max-width: 8.5em;
   margin-bottom: 20px;
-  font-size: clamp(54px, 7vw, 96px);
+  font-size: clamp(42px, 5.8vw, 76px);
   line-height: 0.98;
   letter-spacing: 0;
 }
@@ -575,8 +575,8 @@ button,
   }
 
   h1 {
-    max-width: 7.5em;
-    font-size: 48px;
+    max-width: 100%;
+    font-size: 30px;
   }
 
   .organizers {
